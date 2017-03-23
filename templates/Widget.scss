@@ -1,0 +1,9 @@
+@import '../styles/colors';
+
+.Widget {
+  background: $gray;
+  border-radius: 5px;
+  height: 500px;
+  margin-bottom: 40px;
+  padding: 10px;
+}

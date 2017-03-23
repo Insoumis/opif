@@ -1,0 +1,16 @@
+@import '../styles/colors';
+
+.Header {
+  background: $red;
+  height: 85px;
+  margin-bottom: 60px;
+
+  h1 {
+    background: url('../pages/assets/logo.png');
+    background-size: cover;
+    height: 120px;
+    margin: 0;
+    text-indent: -9999px;
+    width: 164px;
+  }
+}

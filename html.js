@@ -22,11 +22,14 @@ const HTML = ({ body }) => {
         {head.title.toComponent()}
         {head.meta.toComponent()}
 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+
         {css}
       </head>
       <body>
         <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
         <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+        <script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </body>
     </html>
   );
