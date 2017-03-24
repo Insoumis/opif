@@ -1,0 +1,126 @@
+@import '../../styles/colors';
+
+.CandidatList {
+  .loading {
+    > i {
+      font-size: 30px;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      top: 30px;
+      width: 100%;
+    }
+
+    .picture {
+      animation: loadingFade 1s;
+      opacity: .2;
+    }
+  }
+
+  .picture {
+    background: bottom no-repeat;
+    background-size: 100% auto;
+    border-bottom: 10px solid;
+    height: 160px;
+    width: 100%;
+  }
+
+  .sign {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    bottom: -18px;
+    color: #fff;
+    height: 42px;
+    left: 50%;
+    line-height: 36px;
+    margin-left: -23px;
+    position: absolute;
+    transition: .5s linear;
+    width: 42px;
+  }
+
+  .plus .sign {background: $green;}
+
+  .pause .sign {
+    background: $blue;
+
+    i {transform: rotate(90deg);}
+  }
+
+  .minus .sign {background: $red;}
+
+  @each $candidat, $color in (
+  melenchon: $melenchon,
+  hamon: $hamon,
+  macron: $macron,
+  fillon: $fillon,
+  lepen: $lepen
+  ) {
+    .#{$candidat} {
+      position: relative;
+
+      &.loading {
+        > i {color: $color;}
+
+        .sign {
+          background-color: $color;
+
+          i {transform: rotate(0);}
+        }
+      }
+
+      .picture {border-color: $color;}
+
+      @each $progression in (pause, plus, minus) {
+        .#{$progression} .picture {
+          background-image: url('../../pages/assets/#{$candidat}-#{$progression}.png');
+        }
+      }
+    }
+  }
+}
+
+@keyframes loadingFade {
+  from {opacity: 1;}
+
+  to {opacity: .2;}
+}
+
+@keyframes melenchon {
+  from {opacity: .2;}
+  to {opacity: 1;}
+}
+
+.melenchon .picture {animation: melenchon .5s;}
+
+@keyframes hamon {
+  0% {opacity: .2;}
+  33% {opacity: .2;}
+  100% {opacity: 1;}
+}
+
+.hamon .picture {animation: hamon .75s;}
+
+@keyframes macron {
+  0% {opacity: .2;}
+  50% {opacity: .2;}
+  100% {opacity: 1;}
+}
+
+.macron .picture {animation: macron 1s;}
+
+@keyframes fillon {
+  0% {opacity: .2;}
+  60% {opacity: .2;}
+  100% {opacity: 1;}
+}
+
+.fillon .picture {animation: fillon 1.25s;}
+
+@keyframes lepen {
+  0% {opacity: .2;}
+  66% {opacity: .2;}
+  100% {opacity: 1;}
+}
+
+.lepen .picture {animation: lepen 1.5s;}

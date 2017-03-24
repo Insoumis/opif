@@ -2,15 +2,47 @@
 
 .Header {
   background: $red;
-  height: 85px;
+  height: 60px;
   margin-bottom: 60px;
 
   h1 {
     background: url('../pages/assets/logo.png');
     background-size: cover;
-    height: 120px;
+    float: left;
+    height: 110px;
     margin: 0;
     text-indent: -9999px;
-    width: 164px;
+    width: 150px;
+  }
+
+  nav {
+    float: left;
+    padding: 0 30px;
+    width: calc(100% - 164px);
+  }
+
+  a {
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 2px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s;
+
+    &.active,
+    &:hover {border-color: #fff;}
+  }
+
+  .baseline {
+    color: $secondary;
+    line-height: 42px;
+    text-indent: 10px;
+
+    span {
+      color: $red;
+      font-weight: 700;
+    }
   }
 }

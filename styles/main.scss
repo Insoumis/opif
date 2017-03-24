@@ -1,5 +1,12 @@
-@import "normalize";
+@import 'chartist';
+@import 'normalize';
+@import 'colors';
+
+* {box-sizing: border-box;}
 
 body {
+  color: $main;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+a:focus {outline: 0;}

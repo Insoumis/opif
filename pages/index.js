@@ -8,8 +8,10 @@ import Twitter from '../templates/Twitter';
 const Index = () => (
   <Container>
     <Row>
+      <Widget />
+    </Row>
+    <Row>
       <Col md={9}>
-        <Widget />
         <Articles />
       </Col>
       <Col md={3}>
