@@ -5,6 +5,16 @@
   height: 60px;
   margin-bottom: 60px;
 
+  @media (max-width: 991px) {
+    height: 55px;
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: 575px) {
+    height: 44px;
+    margin-bottom: 10px;
+  }
+
   h1 {
     background: url('../pages/assets/logo.png');
     background-size: cover;
@@ -13,26 +23,57 @@
     margin: 0;
     text-indent: -9999px;
     width: 150px;
+
+    @media (max-width: 991px) {
+      height: 88px;
+      width: 120px;
+    }
+
+    @media (max-width: 575px) {
+      height: 44px;
+      width: 60px;
+    }
   }
 
   nav {
     float: left;
     padding: 0 30px;
     width: calc(100% - 164px);
-  }
 
-  a {
-    border-bottom: 1px solid transparent;
-    color: #fff;
-    line-height: 60px;
-    margin: 0 2px;
-    padding: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .2s;
+    @media (max-width: 991px) {
+      padding: 0 20px;
+      width: calc(100% - 134px);
+    }
+    @media (max-width: 575px) {
+      padding: 0 5px;
+      width: calc(100% - 94px);
+    }
 
-    &.active,
-    &:hover {border-color: #fff;}
+    a {
+      border-bottom: 1px solid transparent;
+      color: #fff;
+      line-height: 60px;
+      margin: 0 2px;
+      padding: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .2s;
+
+      @media (max-width: 991px) {
+        font-size: 15px;
+        line-height: 55px;
+      }
+
+      @media (max-width: 575px) {
+        font-size: 13px;
+        line-height: 44px;
+        padding: 0 4px;
+      }
+
+      &.active,
+      &:hover {border-color: #fff;}
+    }
+
   }
 
   .baseline {
@@ -40,7 +81,9 @@
     line-height: 42px;
     text-indent: 10px;
 
-    span {
+    @media (max-width: 991px) {font-size: 13px;}
+
+    strong {
       color: $red;
       font-weight: 700;
     }

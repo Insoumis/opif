@@ -44,7 +44,7 @@ class Graph extends Component {
                 x: data.x1,
                 y: data.y2 - 10,
                 style: 'text-anchor: middle'
-              }, 'ct-value').text(data.value.y).animate({
+              }, 'ct-value').text(data.value.y + '%').animate({
                 opacity: {
                   begin: this.seq * 250 + 500,
                   dur: 200,

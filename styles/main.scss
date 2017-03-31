@@ -7,6 +7,12 @@
 body {
   color: $main;
   font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 30px;
 }
 
 a:focus {outline: 0;}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

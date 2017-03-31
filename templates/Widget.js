@@ -25,7 +25,7 @@ const candidats = [
 ];
 
 const defaultScore = 8;
-const base = 100 - defaultScore * candidats.length;
+const base = 112 - defaultScore * candidats.length;
 
 class Widget extends Component {
   constructor(props) {
@@ -41,8 +41,8 @@ class Widget extends Component {
   }
 
   componentDidMount() {
-    this.loop();
-    setInterval(this.loop.bind(this), 15000);
+    // this.loop();
+    // setInterval(this.loop.bind(this), 15000);
   }
 
   loop() {

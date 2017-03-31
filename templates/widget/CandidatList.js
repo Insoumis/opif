@@ -10,8 +10,8 @@ const CandidatList = ({ candidats, isLoading, progression }) => (
         <Col
           className={`${candidat}${(isLoading) ? ' loading' : ''}`}
           key={i}
-          md={2}
-          offset={(i == 0) ? {md: 1} : {}}
+          xs={2}
+          offset={(i == 0) ? {xs: 1} : {}}
         >
           {(isLoading) ?
           <i className="fa fa-spinner fa-spin"></i>

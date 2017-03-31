@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Container } from 'react-grid-system';
+import { Container, Hidden } from 'react-grid-system';
 import { prefixLink } from 'gatsby-helpers';
 
 import './Header.scss';
@@ -8,12 +8,16 @@ import './Header.scss';
 const Header = () => (
   <header className="Header">
     <Container>
-      <h1>Opif</h1>
+      <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><h1>Opif</h1></Link>
       <nav>
         <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}>Accueil</Link>
         <Link activeClassName="active" to={prefixLink('/methodologie/')}>La méthodologie</Link>
       </nav>
-      <div className="baseline"><span>O</span>bservations et <span>P</span>révisions <span>I</span>ncroyablement <span>F</span>iables. Institut de Météorologie Sondagière et d'Horoscope politique.</div>
+      <Hidden xs>
+        <div className="baseline">
+          <strong>O</strong>bservations et <strong>P</strong>révisions <strong>I</strong>ncroyablement <strong>F</strong>iables. <Hidden sm><span>Institut de Météorologie Sondagière et d'Horoscope politique.</span></Hidden>
+        </div>
+      </Hidden>
     </Container>
   </header>
 );

@@ -1,14 +1,19 @@
 @import '../../styles/colors';
 
 .CandidatList {
+  @media (max-width: 575px) {display: none;}
+
   .loading {
     > i {
       font-size: 30px;
       left: 0;
       position: absolute;
       text-align: center;
-      top: 30px;
+      top: calc(50% - 15px);
       width: 100%;
+
+      @media (max-width: 991px) {font-size: 24px;}
+      @media (max-width: 767px) {font-size: 20px;}
     }
 
     .picture {
@@ -21,8 +26,12 @@
     background: bottom no-repeat;
     background-size: 100% auto;
     border-bottom: 10px solid;
-    height: 160px;
+    height: 180px;
     width: 100%;
+
+    @media (max-width: 1199px) {height: 150px;}
+    @media (max-width: 991px) {height: 120px;}
+    @media (max-width: 767px) {height: 75px;}
   }
 
   .sign {
@@ -33,10 +42,25 @@
     height: 42px;
     left: 50%;
     line-height: 36px;
-    margin-left: -23px;
+    margin-left: -21px;
     position: absolute;
     transition: .5s linear;
     width: 42px;
+
+    @media (max-width: 991px) {
+      height: 36px;
+      line-height: 30px;
+      margin-left: -18px;
+      width: 36px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      height: 30px;
+      line-height: 24px;
+      margin-left: -15px;
+      width: 30px;
+    }
   }
 
   .plus .sign {background: $green;}

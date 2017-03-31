@@ -11,9 +11,21 @@
     font-size: 35px;
     display: inline-block;
     line-height: 50px;
-    margin: 0 0 40px;
+    margin: 0 0 10px;
     padding: 0 60px 15px;
     text-align: center;
+
+    @media (max-width: 767px) {
+      font-size: 25px;
+      line-height: 35px;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0 20px 15px;
+    }
 
     strong {
       color: $red;
@@ -29,6 +41,19 @@
     position: relative;
     width: 60px;
 
+    @media (max-width: 767px) {
+      border-width: 7px;
+      height: 42px;
+      margin-bottom: 10px;
+      width: 42px;
+    }
+
+    @media (max-width: 575px) {
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+    }
+
     &::after {
       background: $blue;
       border-radius: 50%;
@@ -39,12 +64,31 @@
       position: absolute;
       top: 10px;
       width: 20px;
+
+      @media (max-width: 767px) {
+        height: 14px;
+        left: 7px;
+        top: 7px;
+        width: 14px;
+      }
+
+      @media (max-width: 575px) {
+        height: 10px;
+        left: 5px;
+        top: 5px;
+        width: 10px;
+      }
     }
   }
 
   .ct-chart {
     margin-left: calc(100% / 12 - 65px);
     width: calc(100% - (100% / 12) * 2 + 90px);
+
+    @media (max-width: 575px) {
+      margin-left: calc(100% / 12 - 45px);
+      width: calc(100% - (100% / 12) * 2 + 70px);
+    }
   }
 
   @each $name, $color in (
@@ -61,5 +105,14 @@
 
   .ct-value {
     font-size: 17px;
+  }
+
+  @media (max-width: 767px) {
+    .ct-value {font-size: 15px;}
+    .ct-bar {stroke-width: 25px;}
+  }
+
+  @media (max-width: 575px) {
+    .ct-bar {stroke-width: 20px;}
   }
 }

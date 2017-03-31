@@ -1,8 +1,91 @@
 @import '../styles/colors';
 
 .Articles {
-  background: $gray;
   border-radius: 5px;
-  height: 900px;
-  padding: 10px;
+  margin: 0 20px 30px;
+
+  @media (max-width: 575px) {margin: 0 0 30px;}
+
+  h2 {
+    color: $red;
+    font-size: 28px;
+    margin: 0 15px 30px;
+    text-indent: 5px;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {font-size: 24px;}
+    @media (max-width: 575px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    background: $gray;
+    border-radius: 5px;
+    color: $main;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: .2s;
+
+    &:hover {
+      background: $red;
+      color: #fff;
+
+      img,
+      .type {background-color: lighten($red, 20%);}
+      .date {color: lighten($red, 20%);}
+    }
+  }
+
+  img {
+    background: $secondary;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+    width: 75px;
+
+    @media (max-width: 575px) {display: none;}
+  }
+
+  .meta {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 8px 0 15px;
+  }
+
+  .type {
+    background: $red;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    padding: 0 4px;
+    text-transform: capitalize;
+  }
+
+  .date {
+    color: $red;
+    float: right;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+
+    @media (max-width: 767px) {font-size: 18px;}
+    @media (max-width: 575px) {font-size: 16px;}
+  }
 }
