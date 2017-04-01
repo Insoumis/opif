@@ -28,6 +28,41 @@ a:focus {outline: 0;}
 .page {
   margin: 100px 0;
   max-width: 800px !important;
+
+  h2 {
+    border-bottom: 2px solid $red;
+    font-size: 32px;
+    margin: 0 0 30px;
+    padding: 0 20px 20px;
+
+    @media (max-width: 575px) {
+      font-size: 24px;
+      padding: 0 10px 10px;
+    }
+  }
+
+  .content {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 20px;
+
+    @media (max-width: 575px) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+  img {
+    border-bottom: 1px solid $secondary;
+    border-top: 1px solid $secondary;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+
+    @media (max-width: 575px) {margin: 20px auto;}
+  }
 }
 
 

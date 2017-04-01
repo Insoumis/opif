@@ -17,8 +17,8 @@ const Markdown = ({ route }) => {
         <meta name="description" content={route.page.data.description || config.siteDescription} />
       </Helmet>
       <Row>
-        <h1>{route.page.data.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: route.page.data.body }} />
+        <h2>{route.page.data.title}</h2>
+        <div className="content" dangerouslySetInnerHTML={{ __html: route.page.data.body }} />
       </Row>
     </Container>
   );
