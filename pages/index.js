@@ -22,6 +22,12 @@ const Index = ({ route }) => {
       <Helmet>
           <title>Opif | Observations et Prévisions Incroyablement Fiables</title>
           <meta name="description" content={config.siteDescription} />
+          <meta property="og:title" content="Opif | Observations et Prévisions Incroyablement Fiables" />
+          <meta property="og:description" content={config.siteDescription} />
+          <meta property="og:image" content="http://opif.info/assets/preview.png" />
+          <meta property="og:image:width" content="1482" />
+          <meta property="og:image:height" content="778" />
+          <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Row>
         <Widget />

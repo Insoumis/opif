@@ -22,8 +22,14 @@ const HTML = ({ body }) => {
         {head.title.toComponent()}
         {head.meta.toComponent()}
 
+        <meta property="og:site_name" content="OPIF.info" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:site" content="@InstitutOpif" />
+
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i" rel="stylesheet" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
 
         {css}
       </head>

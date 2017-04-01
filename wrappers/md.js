@@ -12,10 +12,10 @@ const Markdown = ({ route }) => {
 
   return (
     <Container className="page">
-      <Helmet
-        title={route.page.data.title + ' | ' + config.siteTitle}
-        description={route.page.data.description || config.siteDescription}
-      />
+      <Helmet>
+        <title>{route.page.data.title + ' | ' + config.siteTitle}</title>
+        <meta name="description" content={route.page.data.description || config.siteDescription} />
+      </Helmet>
       <Row>
         <h1>{route.page.data.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: route.page.data.body }} />

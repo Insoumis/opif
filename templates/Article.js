@@ -27,6 +27,12 @@ class Article extends Component {
         <Helmet>
             <title>{article.data.title + ' | ' + config.siteTitle}</title>
             <meta name="description" content={article.data.description || config.siteDescription} />
+            <meta property="og:title" content={article.data.title + ' | ' + config.siteTitle} />
+            <meta property="og:description" content={article.data.description || config.siteDescription} />
+            <meta property="og:image" content={`http://opif.info${article.path}thumbnail.png`} />
+            <meta property="og:image:width" content="300" />
+            <meta property="og:image:height" content="300" />
+            <meta name="twitter:card" content="summary" />
         </Helmet>
         <Row>
           <article className="main">
