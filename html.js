@@ -30,7 +30,6 @@ const HTML = ({ body }) => {
       <body>
         <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
         <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
-        <script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </body>
     </html>
   );

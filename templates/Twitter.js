@@ -1,10 +1,20 @@
 import React from 'react';
+import { Timeline } from 'react-twitter-widgets';
 
 import './Twitter.scss';
 
 const Twitter = () => (
   <div className="Twitter">
-    <a className="twitter-timeline" data-tweet-limit="3" data-theme="light" data-link-color="#903" href="https://twitter.com/InstitutOPIF">Tweets by InstitutOPIF</a>
+    <Timeline
+      dataSource={{
+        sourceType: 'profile',
+        screenName: 'InstitutOPIF'
+      }}
+      options={{
+        tweetLimit: 3,
+        linkColor: '#903'
+      }}
+    />
   </div>
 );
 
