@@ -118,6 +118,7 @@ class Widget extends Component {
         <Analysis
           candidats={candidats}
           progression={this.state.progression}
+          series={this.state.series}
         />
       </div>
     );
