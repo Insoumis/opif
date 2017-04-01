@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Container, Hidden } from 'react-grid-system';
+import { Container, Hidden, Visible } from 'react-grid-system';
 import { prefixLink } from 'gatsby-helpers';
 
 import './Header.scss';
@@ -8,10 +8,19 @@ import './Header.scss';
 const Header = () => (
   <header className="Header">
     <Container>
-      <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><h1>Opif</h1></Link>
+      <Hidden xs>
+        <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><h1>Opif</h1></Link>
+      </Hidden>
       <nav>
-        <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}>Accueil</Link>
+        <Hidden xs>
+          <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}>Accueil</Link>
+        </Hidden>
+        <Visible xs>
+          <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><i className="fa fa-home" aria-hidden="true"></i></Link>
+        </Visible>
         <Link activeClassName="active" to={prefixLink('/methodologie/')}>La méthodologie</Link>
+        <Link activeClassName="active" to={prefixLink('/contact/')}>Contact</Link>
+        <Link activeClassName="active" to={prefixLink('/about/')}>À propos</Link>
       </nav>
       <Hidden xs>
         <div className="baseline">

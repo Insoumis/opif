@@ -11,7 +11,7 @@ const Markdown = ({ route }) => {
   }
 
   return (
-    <Container>
+    <Container className="page">
       <Helmet
         title={route.page.data.title + ' | ' + config.siteTitle}
         description={route.page.data.description || config.siteDescription}
