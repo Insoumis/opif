@@ -1,0 +1,52 @@
+@import '../styles/colors';
+
+.Article {
+  .main {
+    margin: 100px auto 60px;
+    max-width: 860px;
+  }
+
+  h2 {
+    border-bottom: 2px solid $red;
+    font-size: 32px;
+    margin: 0;
+    padding: 0 20px 20px;
+  }
+
+  .meta {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 15px 20px 20px;
+  }
+
+  .type {
+    background: $red;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    padding: 0 4px;
+    text-transform: capitalize;
+  }
+
+  .date {
+    color: $red;
+    float: right;
+  }
+
+  .content {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 20px;
+  }
+
+  img {
+    border-bottom: 1px solid $secondary;
+    border-top: 1px solid $secondary;
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    padding: 20px;
+  }
+}

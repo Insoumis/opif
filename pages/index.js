@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 import _ from 'lodash';
 
 import Widget from '../templates/Widget';
-import Articles from '../templates/Articles';
+import ArticleList from '../templates/ArticleList';
 import Twitter from '../templates/Twitter';
 
 const Index = ({ route }) => {
@@ -22,7 +22,7 @@ const Index = ({ route }) => {
       </Row>
       <Row>
         <Col md={12} lg={9}>
-          <Articles articles={articles} />
+          <ArticleList articles={articles} />
         </Col>
         <Col md={12} lg={3}>
           <Twitter />

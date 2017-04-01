@@ -41,8 +41,8 @@ class Widget extends Component {
   }
 
   componentDidMount() {
-    // this.loop();
-    // setInterval(this.loop.bind(this), 15000);
+    this.loop();
+    setInterval(this.loop.bind(this), 15000);
   }
 
   loop() {

@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
-import './Articles.scss';
+import './ArticleList.scss';
 
-const Articles = ({ articles }) => (
-  <div className="Articles">
+const ArticleList = ({ articles }) => (
+  <div className="ArticleList">
     <h2>Les derniers articles certifiés Opif <i className="fa fa-thumbs-up" aria-hidden="true"></i></h2>
     <ul>
       {articles.map((article, i) => (
@@ -28,8 +28,8 @@ const Articles = ({ articles }) => (
   </div>
 );
 
-Articles.propTypes = {
+ArticleList.propTypes = {
   articles: React.PropTypes.array,
 };
 
-export default Articles;
+export default ArticleList;
