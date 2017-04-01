@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { Container, Row } from 'react-grid-system';
 import { config } from 'config';
 
+import Share from './Share';
 import './Article.scss';
 
 class Article extends Component {
@@ -18,6 +19,8 @@ class Article extends Component {
 
   render() {
     const { article } = this.props;
+    const url = encodeURI('http://opif.info'+article.path);
+    const twitterText = encodeURI(`${article.data.title} ${url} via @InstitutOPIF`);
 
     return (
       <Container className="Article">
@@ -28,13 +31,18 @@ class Article extends Component {
         <Row>
           <article className="main">
             <header>
-              <h2>{article.data.title}</h2>
+              <h2>
+                {article.data.title}
+              </h2>
               <div className="meta clearfix">
-                <div className="type">{article.data.type}</div>
+                <Share twitterText={twitterText} url={url} />
                 <div className="date">{article.data.date}</div>
               </div>
             </header>
             <div className="content" dangerouslySetInnerHTML={{ __html: article.data.body }} />
+            <footer>
+              <Share twitterText={twitterText} url={url} />
+            </footer>
           </article>
         </Row>
       </Container>

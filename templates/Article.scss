@@ -23,19 +23,34 @@
   .meta {
     font-size: 15px;
     line-height: 22px;
-    padding: 15px 20px 20px;
+    padding: 15px 20px 30px;
 
-    @media (max-width: 575px) {padding: 10px;}
+    @media (max-width: 575px) {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .share {float: left;}
   }
 
-  .type {
-    background: $red;
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    float: left;
-    padding: 0 4px;
-    text-transform: capitalize;
+  .share {
+    a {
+      display: inline-block;
+      padding: 0 8px;
+
+      @media (max-width: 565px) {
+        padding: 0 8px 0 0;
+
+        i {
+          font-size: 1em;
+          vertical-align: baseline;
+        }
+      }
+    }
+
+    @media (max-width: 565px) {
+      span {display: none;}
+    }
   }
 
   .date {
@@ -89,7 +104,7 @@
     .author {color: $red;}
   }
 
-  iframe,
+  .content iframe,
   .twitter-tweet-rendered {
     border-bottom: 1px solid $secondary;
     border-top: 1px solid $secondary;
@@ -97,5 +112,13 @@
     margin: 40px auto !important;
     max-width: 100%;
     padding: 20px;
+  }
+
+  footer {
+    border-top: 2px solid $red;
+    margin-top: 60px;
+    padding: 20px;
+
+    @media (max-width: 575px) {padding: 10px;}
   }
 }
