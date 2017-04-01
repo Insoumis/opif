@@ -14,12 +14,13 @@ const ArticleList = ({ articles }) => (
             {(article.data.thumbnail) ?
               <img src={prefixLink(`${article.path}${article.data.thumbnail}`)} alt={article.data.title}/>
             : false}
-            <div className="content">
+            <div>
               <div className="meta clearfix">
                 <div className="type">{article.data.type}</div>
                 <div className="date">{article.data.date}</div>
               </div>
               <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
             </div>
           </Link>
         </li>

@@ -12,6 +12,9 @@ const HTML = ({ body }) => {
     css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />;
   }
 
+  console.log(head.title.toComponent());
+  console.log(head.meta.toComponent());
+
   return (
     <html lang="fr">
       <head>

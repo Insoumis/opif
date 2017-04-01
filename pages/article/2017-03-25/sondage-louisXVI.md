@@ -3,6 +3,7 @@ title: Louis XVI vs France
 date: 25 mars 2017
 type: sondage
 thumbnail: thumbnail.png
+description: L'institut Opif revient sur le sondage du 25 mars 1789 opposant Louis XVI au bas peuple français.
 ---
 
 Aujourd'hui, nous vous proposons un petit retour en arrière en ressortant de nos archives un des sondages qui a fait le plus polémique en cette année tumultueuse de 1789. Ce sondage, effectué auprès de 345 personnes essentiellement résidant à Versailles - Château (pour des raisons évidentes de facilité de communication avec nos équipes autrefois implantées au 98 Boulevard de la Reine, Versailles, Royaume de France) a été réalisé avec la méthode des quotas. La marge d'erreur n'était alors pas encore requise pour la publication de sondages.

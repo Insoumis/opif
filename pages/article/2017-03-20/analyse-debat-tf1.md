@@ -3,6 +3,7 @@ title: Grand débat de TF1 du 20 mars 2017
 date: 20 mars 2017
 type: analyse
 thumbnail: thumbnail.png
+description: Retrouvez l'analyse du grand débat de TF1 du 20 mars 2017 par l'institut Opif.
 ---
 
 Le Grand Débat de TF1 ? Un départ en douceur... Tout en douc.... Oulah ! Décidément, Fillon, fidèle à lui même, a une apathie contagieuse. Dans ses pensées, le représentant de la droite française n'entend pas son assistante qui l'houspille et lui demande d'entrer en scène. À raison, elle se situait à sa gauche et de plus, ces derniers jours, ce vrai geek ne lit plus que ses sms.

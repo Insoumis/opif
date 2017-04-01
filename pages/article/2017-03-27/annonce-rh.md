@@ -3,6 +3,7 @@ title: Ressources Humaines
 date: 27 mars 2017
 type: annonce
 thumbnail: thumbnail.png
+description: L'institut Opif recrute un nouvel expert. Découvrez vite quel nouveau génie des techniques sondagières a rejoint notre équipe !
 ---
 
 Nous avons le plaisir de vous informer du recrutement pour le poste de consultant de Docteur Nostradamus, PhD, expert sondagier.

@@ -1,5 +1,7 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { Container, Row, Col } from 'react-grid-system';
+import { config } from 'config';
 import _ from 'lodash';
 
 import Widget from '../templates/Widget';
@@ -17,6 +19,10 @@ const Index = ({ route }) => {
 
   return (
     <Container>
+      <Helmet>
+          <title>Opif | Observations et Prévisions Incroyablement Fiables</title>
+          <meta name="description" content={config.siteDescription} />
+      </Helmet>
       <Row>
         <Widget />
       </Row>
