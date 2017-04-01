@@ -3,8 +3,10 @@ var markdownIt = require('markdown-it');
 var objectAssign = require('object-assign');
 
 var md = markdownIt({
+  html: true,
   typographer: true,
-});
+})
+  .use(require('markdown-it-attrs'));
 
 module.exports = function (content) {
   this.cacheable();

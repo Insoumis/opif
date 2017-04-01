@@ -20,7 +20,8 @@
     "babel-eslint": "^7.2.0",
     "eslint": "^3.18.0",
     "eslint-plugin-react": "^6.10.3",
-    "gatsby": "^0.12.39"
+    "gatsby": "^0.12.39",
+    "markdown-it-attrs": "^0.8.0"
   },
   "eslintConfig": {
     "parser": "babel-eslint",

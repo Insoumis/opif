@@ -5,4 +5,4 @@ type: sondage
 thumbnail: thumbnail.png
 ---
 
-![Intention de votes par région](sondage-region.png)
+[![Intention de votes par région](sondage-region.png)](sondage-region.png)

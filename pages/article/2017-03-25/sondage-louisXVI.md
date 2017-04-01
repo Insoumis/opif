@@ -9,7 +9,7 @@ Aujourd'hui, nous vous proposons un petit retour en arrière en ressortant de no
 
 La chaîne de télévision Royauté TV (regrettablement remplacée par BFMacron TV bien plus tard sur le même canal) publiait donc en avant première le résultat de notre sondage qui donnait l'avantage à 64 % pour le Roi Louis XVI (né Louis-Auguste de France) contre 36 % pour le bas-peuple avec ses enfants armés jusqu'au cou et ses femmes dénudées.
 
-![Sondage du 25 mars 1789](sondage-louisXVI.png)
+[![Sondage du 25 mars 1789](sondage-louisXVI.png)](sondage-louisXVI.png)
 
 Il est bien entendu facile maintenant de douter de ce résultat avec le regard que l'on peut avoir après-coup mais on peut tout de même observer la capacité de nos sondages à détecter surtout les tendances.
 

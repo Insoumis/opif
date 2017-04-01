@@ -49,4 +49,14 @@
     max-width: 100%;
     padding: 20px;
   }
+
+  blockquote {
+    border-left: 1px solid $red;
+    color: $secondary;
+    font-style: italic;
+    margin: 40px 60px;
+    padding: 2px 40px;
+
+    .author {color: $red;}
+  }
 }
