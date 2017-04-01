@@ -2,7 +2,7 @@
 
 .Article {
   .main {
-    margin: 100px auto 60px;
+    margin: 100px auto;
     max-width: 860px;
 
     @media (max-width: 575px) {margin-top: 40px;}
@@ -55,6 +55,13 @@
     }
   }
 
+  a {
+    color: $red;
+    text-decoration: none;
+
+    &:hover {text-decoration: underline;}
+  }
+
   img {
     border-bottom: 1px solid $secondary;
     border-top: 1px solid $secondary;
@@ -80,5 +87,15 @@
     }
 
     .author {color: $red;}
+  }
+
+  iframe,
+  .twitter-tweet-rendered {
+    border-bottom: 1px solid $secondary;
+    border-top: 1px solid $secondary;
+    display: block;
+    margin: 40px auto !important;
+    max-width: 100%;
+    padding: 20px;
   }
 }
