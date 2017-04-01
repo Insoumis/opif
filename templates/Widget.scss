@@ -1,9 +1,13 @@
 @import '../styles/colors';
 
 .Widget {
-  margin-bottom: 30px;
+  border-bottom: 3px solid $red;
+  margin-bottom: 70px;
   padding: 10px;
   text-align: center;
+
+  @media (max-width: 991px) {margin-bottom: 50px;}
+  @media (max-width: 575px) {margin-bottom: 30px;}
 
   h2 {
     border-bottom: 3px solid $red;
@@ -88,12 +92,18 @@
     transform: translateY(-5px);
     transition: .2s;
 
+    @media (max-width: 767px) {font-size: 16px;}
+
     &.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
-    strong {font-size: 22px;}
+    strong {
+      font-size: 22px;
+
+      @media (max-width: 767px) {font-size: 18px;}
+    }
   }
 
   .ct-chart {

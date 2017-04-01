@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import CandidatList from './widget/CandidatList';
 import Graph from './widget/Graph';
+import Analysis from './widget/Analysis';
 import './Widget.scss';
 
 const candidats = [
@@ -77,7 +78,7 @@ class Widget extends Component {
     this.setState({
       isLoading: false,
       progression: progression,
-      series: newSeries,
+      series: newSeries
     });
   }
 
@@ -114,6 +115,10 @@ class Widget extends Component {
           labels: candidats.map((candidat) => candidat.name),
           series: this.state.series,
         }} />
+        <Analysis
+          candidats={candidats}
+          progression={this.state.progression}
+        />
       </div>
     );
   }

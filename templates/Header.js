@@ -8,14 +8,14 @@ import './Header.scss';
 const Header = () => (
   <header className="Header">
     <Container>
-      <Hidden xs>
+      <Hidden sm xs>
         <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><h1>Opif</h1></Link>
       </Hidden>
       <nav>
-        <Hidden xs>
+        <Hidden sm xs>
           <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}>Accueil</Link>
         </Hidden>
-        <Visible xs>
+        <Visible sm xs>
           <Link activeClassName="active" onlyActiveOnIndex={true} to={prefixLink('/')}><i className="fa fa-home" aria-hidden="true"></i></Link>
         </Visible>
         <Link activeClassName="active" to={prefixLink('/methodologie/')}>La méthodologie</Link>

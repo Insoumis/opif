@@ -1,0 +1,24 @@
+@import '../../styles/colors';
+
+.Analysis {
+  background: $gray;
+  border-radius: 5px;
+  margin: 20px 0 60px;
+  padding: 20px;
+
+  @media (max-width: 991px) {margin-bottom: 40px;}
+  @media (max-width: 575px) {margin-bottom: 20px;}
+
+  @each $name, $color in (
+  melenchon: $melenchon,
+  hamon: $hamon,
+  macron: darken($macron, 10%),
+  fillon: $fillon,
+  lepen: $lepen
+  ) {
+    .#{$name} {
+      color: $color;
+      font-weight: 400;
+    }
+  }
+}
