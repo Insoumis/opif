@@ -40,19 +40,48 @@ class Analysis extends Component {
     );
   }
 
-  getFirstOnesText() {
-    let { candidats, series } = this.props;
-    let first = _.indexOf(series, _.max(series));
-    delete series[first];
-    let second = _.indexOf(series, _.max(series));
-    first = candidats[first];
-    second = candidats[second];
+  getFirstOneText() {
+    const { candidats, progression, series } = this.props;
 
-    return (
-      <div className="Analysis">
-        <strong className={second.alias}>{second.name}</strong> le seul vote "utile" pour contrer <strong className={first.alias}>{first.name}</strong> ?
-      </div>
-    );
+    const index = _.indexOf(series, _.max(series));
+    const candidat = candidats[index];
+
+    if (progression[index] == 'plus') {
+      return (
+        <div className="Analysis">
+          <strong className={candidat.alias}>{candidat.name}</strong>  caracole en tête !
+        </div>
+      );
+    } else {
+      return (
+        <div className="Analysis">
+          <strong className={candidat.alias}>{candidat.name}</strong> est en tête, mais pour combien de temps ?
+        </div>
+      );
+    }
+  }
+
+  getFirstOnesText() {
+    let { candidats, progression, series } = this.props;
+    const first = _.indexOf(series, _.max(series));
+    const firstOne = candidats[first];
+    delete series[first];
+    const second = _.indexOf(series, _.max(series));
+    const secondOne = candidats[second];
+
+    if (progression[first] == progression[second]) {
+      return (
+        <div className="Analysis">
+          <strong className={firstOne.alias}>{firstOne.name}</strong> et <strong className={secondOne.alias}>{secondOne.name}</strong> : le bras de fer s'amorce.
+        </div>
+      );
+    } else {
+      return (
+        <div className="Analysis">
+          <strong className={secondOne.alias}>{secondOne.name}</strong> le seul vote "utile" pour contrer <strong className={firstOne.alias}>{firstOne.name}</strong> ?
+        </div>
+      );
+    }
   }
 
   getLastOneText() {
@@ -76,14 +105,30 @@ class Analysis extends Component {
     }
   }
 
+  getUndervaluedText() {
+    const { candidats } = this.props;
+    const nbr = Math.floor(Math.random() * candidats.length);
+    const candidat = candidats[nbr];
+
+    return (
+      <div className="Analysis">
+        Le score de <strong className={candidat.alias}>{candidat.name}</strong> est-il sous-évalué dans les sondages ?
+      </div>
+    );
+  }
+
   getText() {
-    const value = Math.floor(Math.random() * 3);
+    const value = Math.floor(Math.random() * 4);
 
     switch (value) {
     case 0:
-      return this.getFirstOnesText();
+      return this.getFirstOneText();
     case 1:
+      return this.getFirstOnesText();
+    case 2:
       return this.getLastOneText();
+    case 3:
+      return this.getUndervaluedText();
     default:
       return this.getProgressionText();
     }

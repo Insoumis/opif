@@ -120,6 +120,9 @@ class Widget extends Component {
           progression={this.state.progression}
           series={this.state.series}
         />
+        <div className="disclaimer">
+          © 2017 Institut Opif, Sondage réalisé sur un échantillon représentatif de 346 ornithorynques, résultats redressés selon l'âge du capitaine. Marge d'erreur : 45% ... ou un truc de la même farine ...
+        </div>
       </div>
     );
   }
