@@ -32,6 +32,7 @@
       "es6": true
     },
     "globals": {
+      "emailjs": true,
       "twttr": true
     },
     "extends": [

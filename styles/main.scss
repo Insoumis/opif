@@ -10,9 +10,89 @@ body {
   margin-bottom: 30px;
 }
 
+button:focus,
+input:focus,
+textarea:focus,
 a:focus {outline: 0;}
 
 .clearfix {
   overflow: auto;
   zoom: 1;
+}
+
+
+
+/*** PAGES ***/
+
+.contact {
+  margin: 100px 0;
+  max-width: 800px !important;
+
+  h2 {font-size: 32px;}
+
+  form {
+    background: $gray;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  fieldset {
+    border: 0;
+    margin: 0 0 25px;
+    padding: 0;
+
+    &.error {
+      label {color: $red;}
+
+      input,
+      textarea {border-color: $red;}
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-indent: 10px;
+  }
+
+  input,
+  textarea {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: darken($secondary, 20%);
+    font-family: Roboto, sans-serif;
+    padding: 8px;
+    transition: .2s;
+    width: 100%;
+  }
+
+  input {height: 35px;}
+
+  textarea {
+    height: 200px;
+    resize: vertical;
+  }
+
+  .feedback {float: left;}
+
+  .loading {
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+  }
+
+  .success {color: $green;}
+
+  .error {color: $red;}
+
+  button {
+    background: $red;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    transition: .2s;
+
+    &:hover {background: lighten($red, 20%);}
+  }
 }

@@ -31,6 +31,7 @@ const HTML = ({ body }) => {
         <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
         <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
         <script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
+        <script async src="https://cdn.emailjs.com/dist/email.min.js"></script>
       </body>
     </html>
   );
