@@ -2,11 +2,50 @@
 title: Méthodologie sondagière pour les nuls
 ---
 
-À venir très bientôt ! Découvrez tout ce que vous avez toujours voulu savoir sur les sondages !
+Avant de constituer un institut de sondage agréé comme Opif, nous avons passé plusieurs années à réunir les talents, potassant les ouvrages de référence en statistique, intervalles de confiance en loi du chi² et mondélisation multinomiale des fluctuations de l'électorat n'ayant plus de secrets pour les experts ès-sondage de Opif. 
 
 # Méthodologie : comment fonctionnent les sondages traditionnels ?
 
-## Que sont les "marges d'erreur"
+   ## Réalisation d'un sondage politique
+   
+   ### L'échantillonage uniforme
+   
+   Dans l'idéal, il suffit de sélectionner aléatoirement dans la population française mille personnes avec une probabilité égale, puis de leur demander pour qui elles comptent voter. Cette méthode est difficile à réaliser en pratique, certaines catégories de la population étant beaucoup plus dures à atteindre que d'autres (travailleurs de nuit, personnes agées ou qui ne répondent pas au téléphone) et ces nombreux biais de non-réponse induisent des prévisions fausses.
+  
+   ### Méthode des quotas
+   
+   Le sondeur commence alors par recenser dans une base de donnée plusieurs milliers de personnes, puis demande à chacune : son âge, lieu de résidence, profession, vote en 2012. Ensuite, un panel de mille personnes est constitué d'une façon telle que les proportions de jeunes,  retraités, ouvriers, cadres, agriculteurs, électeurs de chacun des candidats de 2012 corresponde approximativement à celles de la population française. Ce panel est dit représentatif ce qui signifie que les proportions d'électeurs de chacun des candidats de 2017 correspondront bien à la réalité de la population.
+
+   ### Le redressement
+   
+   Le sondeur demande à un panel non-représentatif de mille personnes : leur âge, lieu de résidence, profession, vote en 2012 et ce qu'elles comptent voter en 2017. Puis il calcule la proportion de hommes, femmes, jeunes, retraités, ouvriers, agriculteurs, électeurs de chacun des candidats de 2012. Enfin, il affecte à chacun des sondés un poids entre 1/10 et 10 et ceux-ci sont modifiés jusqu'à que les proportions <b>pondérées</b> de chaque catégorie corresponde approximativement à la réalité de la population française. Les proportions d'électeurs de chaque candidats de 2017 sont pondérées avec les mêmes poids et ce sont celles-ci qui sont communiquées à la presse
+   Ces deux dernières méthodes sont utilisées conjointement par les instituts de sondage, la méthode des quotas permettant de rendre le redressement à opérer assez faible. La notion d'élection de référence est primordiale (dans cet exemple il s'agit de la présidentielle 2012). Voici un extrait d'une notice Ifop montrant un écart important entre la reconstitution de la présidentielle 2012 et des régionales 2015 dans le panel utilisé pour l'un de leur sondage :
+   
+   [![texte de remplacement](../assets/notice_ifop.png)](http://www.commission-des-sondages.fr/notices/files/notices/2017/mars/8373-roll-43-ifop-pm.pdf)
+      
+   ## La commission des sondages
+   
+   Créée suite à une [loi de 1977 modifiée en 2016](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000522846) régissant le contenu et la publication des sondages d'opinion, elle a un rôle actif depuis 2012 et surtout 2016. Désormais elle demande à chaque sondeur et publie sur <a href="www.commission-des-sondages.fr/notices/">son site</a> des notices permettant de connaître sinon la méthodoloie exacte, au moins : la taille du panel, les marges d'erreurs, si la méthode des quotas et un redressement ont été utilisés, avec quelle élection de référence. Lorsque des irrégularités sont constatées, la commission communique directement avec le sondeur et lui fait des recommandations. Malheureusement, ce processus est très peu transparent et les sondeurs récalcitrants ne sont pas mentionnés nommément et de simple rappels à la loi leur sont adressés. <br/><br/>
+   Néanmoins, certains passages de ses [rapports](http://www.commission-des-sondages.fr/hist/pdf/rapport-2015-2016.pdf) sont intéressants et permettent de se faire une meilleure idée de la méthodologie des instituts de sondage :<br/><br/>
+   
+   > Les deux autres mises au point, ordonnées dans le cadre du pouvoir d’autosaisine de la
+commission, ont relevé l’existence d’un défaut de méthode qui a affecté la qualité des résultats
+publiés. Etait en cause le choix des redressements, ceux retenus pour établir les résultats du sondage
+relatif au second tour de scrutin différant de ceux utilisés pour établir les résultats relatifs au
+premier. En outre, dans certains cas, il est apparu que l’institut avait procédé, s’agissant de certains
+candidats seulement, à une correction des résultats obtenus au vu des redressements qu’il avait
+décidé de retenir en se fondant sur d’autres éléments sans justifier de la cohérence globale de sa
+méthode. [...]
+> La commission rappelle qu’en principe, les sondages doivent, d’une vague à l’autre, être établis à partir d’une même méthode de redressement des résultats bruts, cette continuité méthodologique étant une condition nécessaire à leur comparabilité. Mais la commission n’exclut pas la possibilité, pour un institut, de changer de méthode au sein d’une succession de vagues. Cette modification peut aussi bien concerner le choix des sous-populations concernées que celui des élections de référence. Ce choix, qui relève de la responsabilité des instituts, doit être justifié par un élément intrinsèque ou extrinsèque à l’enquête qui conduit à considérer que la comparabilité des résultats par rapport à ceux de la précédente vague suppose un tel changement de méthode. En pareil cas, il appartient à l’institut de fournir à la commission toutes les explications nécessaires de nature à démontrer le bien-fondé de ce choix méthodologique.
+   
+   ### Pour aller plus loin
+   
+    * [Receuil d'articles sur les sondages préelectoraux par la société française de statistique](http://publications-sfds.fr/index.php/stat_soc/issue/view/24/showToc)
+    * [Un cours de maths appliquées aux sondages donné au CNAM.](http://maths.cnam.fr/spip.php?article54)
+
+## Statistiques : comprendre l'aspect technique. 
+
+### Que sont les "marges d'erreur"
 
 Les "marges d'erreur" permettent d'évaluer la précision des chiffres obtenus par les sondeurs. Si un sondage indiquent 53 % d'intentions de vote pour A contre 47 % pour B, on ne peut conclure certainement sur l'ordre réel des candidats : si "la marge d'erreur" est de par exemple 5 points, il est tout à fait probable qu'en réalité B soit devant. De même, on ne peut tirer aucune conclusion d'une variation de seulement 0,5 ou 1 point entre seulement deux sondages, si la marge d'erreur dite "à 95 %" est de plusieurs points. N'en déplaisent à certains [journaux](http://www.arretsurimages.net/articles/2017-03-17/Sondages-les-chutes-les-toboggans-et-les-dynamiques-invisibles-de-Match-id9669).
 
