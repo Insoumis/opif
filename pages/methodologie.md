@@ -38,10 +38,10 @@ décidé de retenir en se fondant sur d’autres éléments sans justifier de la
 méthode. [...]
 > La commission rappelle qu’en principe, les sondages doivent, d’une vague à l’autre, être établis à partir d’une même méthode de redressement des résultats bruts, cette continuité méthodologique étant une condition nécessaire à leur comparabilité. Mais la commission n’exclut pas la possibilité, pour un institut, de changer de méthode au sein d’une succession de vagues. Cette modification peut aussi bien concerner le choix des sous-populations concernées que celui des élections de référence. Ce choix, qui relève de la responsabilité des instituts, doit être justifié par un élément intrinsèque ou extrinsèque à l’enquête qui conduit à considérer que la comparabilité des résultats par rapport à ceux de la précédente vague suppose un tel changement de méthode. En pareil cas, il appartient à l’institut de fournir à la commission toutes les explications nécessaires de nature à démontrer le bien-fondé de ce choix méthodologique.
    
-   ### Pour aller plus loin
+### Pour aller plus loin
    
-    * [Receuil d'articles sur les sondages préelectoraux par la société française de statistique](http://publications-sfds.fr/index.php/stat_soc/issue/view/24/showToc)
-    * [Un cours de maths appliquées aux sondages donné au CNAM.](http://maths.cnam.fr/spip.php?article54)
+* [Recueil d'articles sur les sondages préelectoraux par la société française de statistique](http://publications-sfds.fr/index.php/stat_soc/issue/view/24/showToc)
+* [Un cours de maths appliquées aux sondages donné au CNAM.](http://maths.cnam.fr/spip.php?article54)
 
 ## Statistiques : comprendre l'aspect technique. 
 
