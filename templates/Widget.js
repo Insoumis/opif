@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import CandidatList from './widget/CandidatList';
 import Graph from './widget/Graph';
+import Analysis from './widget/Analysis';
 import './Widget.scss';
 
 const candidats = [
@@ -26,6 +27,7 @@ const candidats = [
 
 const defaultScore = 8;
 const base = 112 - defaultScore * candidats.length;
+let counterInterval;
 
 class Widget extends Component {
   constructor(props) {
@@ -34,6 +36,7 @@ class Widget extends Component {
     const progression = candidats.map(() => 'pause');
 
     this.state = {
+      counter: 15,
       isLoading: true,
       series: this.getSeries(),
       progression,
@@ -46,9 +49,14 @@ class Widget extends Component {
   }
 
   loop() {
+    clearInterval(counterInterval);
+
     this.setState({
+      counter: 15,
       isLoading: true,
     });
+
+    counterInterval = setInterval(() => this.setState({ counter : this.state.counter - 1}), 1000);
 
     setTimeout(this.getNewState.bind(this), 2500);
   }
@@ -70,7 +78,7 @@ class Widget extends Component {
     this.setState({
       isLoading: false,
       progression: progression,
-      series: newSeries,
+      series: newSeries
     });
   }
 
@@ -95,6 +103,9 @@ class Widget extends Component {
           <div className="cocarde" />
           Suivez la Loterie Présidentielle<br /><strong>EN TEMPS RÉEL</strong>
         </h2>
+        <div className={`counter${(this.state.counter < 13 ) ? ' visible' : ''}`}>
+          <strong>{(this.state.counter < 13) ? this.state.counter : 0}s</strong> avant la prochaine mise à jour !
+        </div>
         <CandidatList
           candidats={candidats.map((candidat) => candidat.alias)}
           isLoading={this.state.isLoading}
@@ -104,6 +115,14 @@ class Widget extends Component {
           labels: candidats.map((candidat) => candidat.name),
           series: this.state.series,
         }} />
+        <Analysis
+          candidats={candidats}
+          progression={this.state.progression}
+          series={this.state.series}
+        />
+        <div className="disclaimer">
+          © 2017 Institut Opif, Sondage réalisé sur un échantillon représentatif de 346 ornithorynques, résultats redressés selon l'âge du capitaine. Marge d'erreur : 45% ... ou un truc de la même farine ...
+        </div>
       </div>
     );
   }

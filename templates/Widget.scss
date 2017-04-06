@@ -1,9 +1,19 @@
 @import '../styles/colors';
 
 .Widget {
-  margin-bottom: 30px;
-  padding: 10px;
+  border-bottom: 3px solid $red;
+  margin-bottom: 70px;
+  padding: 10px 10px 60px;
   text-align: center;
+
+  @media (max-width: 991px) {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
 
   h2 {
     border-bottom: 3px solid $red;
@@ -81,6 +91,27 @@
     }
   }
 
+  .counter {
+    color: $blue;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: .2s;
+
+    @media (max-width: 767px) {font-size: 16px;}
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    strong {
+      font-size: 22px;
+
+      @media (max-width: 767px) {font-size: 18px;}
+    }
+  }
+
   .ct-chart {
     margin-left: calc(100% / 12 - 65px);
     width: calc(100% - (100% / 12) * 2 + 90px);
@@ -114,5 +145,15 @@
 
   @media (max-width: 575px) {
     .ct-bar {stroke-width: 20px;}
+  }
+
+  .disclaimer {
+    color: $secondary;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.5em;
+    padding: 20px 10px;
+    text-align: left;
   }
 }

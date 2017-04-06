@@ -1,0 +1,35 @@
+@import '../../styles/colors';
+
+.Analysis {
+  background: $gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
+
+  .content {animation: appear .5s;}
+
+  @each $name, $color in (
+  melenchon: $melenchon,
+  hamon: $hamon,
+  macron: darken($macron, 10%),
+  fillon: $fillon,
+  lepen: $lepen
+  ) {
+    .#{$name} {
+      color: $color;
+      font-weight: 400;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
