@@ -108,12 +108,21 @@
 
   .content iframe,
   .twitter-tweet-rendered {
+    border: 0;
     border-bottom: 1px solid $secondary;
     border-top: 1px solid $secondary;
     display: block;
     margin: 40px auto !important;
     max-width: 100%;
     padding: 20px;
+  }
+
+  .legend {
+    color: $secondary;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   footer {

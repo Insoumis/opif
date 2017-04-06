@@ -11,7 +11,7 @@ const Twitter = () => (
         screenName: 'InstitutOPIF'
       }}
       options={{
-        tweetLimit: 3,
+        tweetLimit: 5,
         linkColor: '#903'
       }}
     />
