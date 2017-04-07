@@ -21,7 +21,7 @@ Alors que les équipes du candidat Hamon (dit le Copy Ninja) venaient tout juste
 
 [![Les moutons des montagnes à la conquête des sondages pour Jean Lasalle](analyse-debat-bfm-cnews.png)](analyse-debat-bfm-cnews.png)
 
-Imperturbable, le directeur de l’institut Opif décrypte pour nous ce processus mystérieux :
+Imperturbable, le [directeur de l’institut](http://opif.info/article/2017-03-29/annonce-sondagegate/) Opif décrypte pour nous ce processus mystérieux :
 « C’est un phénomène particulièrement exceptionnel. En effet, lorsqu’ils repèrent une trop grande présence d’Astroturf (ndlr : L’Astroturfing est la création d’opinion factice via l’utilisation des bots, en opposition à l’option dite Grass-Root : enracinée, organique, réelle) les moutons se connectent massivement au réseau et se mobilisent pour porter secours à Jean Lassalle, leur candidat naturel, le plaçant sans difficulté en tête de n’importe quel sondage non sécurisé. »
 
 Corroborant cette analyse, notre envoyé spécial en direct de l’ambassade de l’Equateur à Londres nous confirme :
