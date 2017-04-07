@@ -22,23 +22,6 @@ Avant de constituer un institut de sondage agréé comme Opif, nous avons passé
    Ces deux dernières méthodes sont utilisées conjointement par les instituts de sondage, la méthode des quotas permettant de rendre le redressement à opérer assez faible. La notion d'élection de référence est primordiale (dans cet exemple il s'agit de la présidentielle 2012). Voici un extrait d'une notice Ifop montrant un écart important entre la reconstitution de la présidentielle 2012 et des régionales 2015 dans le panel utilisé pour l'un de leur sondage :
    
    [![texte de remplacement](../assets/notice_ifop.png)](http://www.commission-des-sondages.fr/notices/files/notices/2017/mars/8373-roll-43-ifop-pm.pdf)
-      
-   ## La commission des sondages
-   
-   Créée suite à une [loi de 1977 modifiée en 2016](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000522846) régissant le contenu et la publication des sondages d'opinion, elle a un rôle actif depuis 2012 et surtout 2016. Désormais elle demande à chaque sondeur et publie sur <a href="www.commission-des-sondages.fr/notices/">son site</a> des notices permettant de connaître sinon la méthodoloie exacte, au moins : la taille du panel, les marges d'erreurs, si la méthode des quotas et un redressement ont été utilisés, avec quelle élection de référence. Lorsque des irrégularités sont constatées, la commission communique directement avec le sondeur et lui fait des recommandations. Malheureusement, ce processus est très peu transparent et les sondeurs récalcitrants ne sont pas mentionnés nommément et de simple rappels à la loi leur sont adressés. <br/><br/>
-   Néanmoins, certains passages de ses [rapports](http://www.commission-des-sondages.fr/hist/pdf/rapport-2015-2016.pdf) sont intéressants et permettent de se faire une meilleure idée de la méthodologie des instituts de sondage :<br/><br/>
-   
-   > Les deux autres mises au point, ordonnées dans le cadre du pouvoir d’autosaisine de la
-commission, ont relevé l’existence d’un défaut de méthode qui a affecté la qualité des résultats
-publiés. Etait en cause le choix des redressements, ceux retenus pour établir les résultats du sondage
-relatif au second tour de scrutin différant de ceux utilisés pour établir les résultats relatifs au
-premier. En outre, dans certains cas, il est apparu que l’institut avait procédé, s’agissant de certains
-candidats seulement, à une correction des résultats obtenus au vu des redressements qu’il avait
-décidé de retenir en se fondant sur d’autres éléments sans justifier de la cohérence globale de sa
-méthode. [...]
-> La commission rappelle qu’en principe, les sondages doivent, d’une vague à l’autre, être établis à partir d’une même méthode de redressement des résultats bruts, cette continuité méthodologique étant une condition nécessaire à leur comparabilité. Mais la commission n’exclut pas la possibilité, pour un institut, de changer de méthode au sein d’une succession de vagues. Cette modification peut aussi bien concerner le choix des sous-populations concernées que celui des élections de référence. Ce choix, qui relève de la responsabilité des instituts, doit être justifié par un élément intrinsèque ou extrinsèque à l’enquête qui conduit à considérer que la comparabilité des résultats par rapport à ceux de la précédente vague suppose un tel changement de méthode. En pareil cas, il appartient à l’institut de fournir à la commission toutes les explications nécessaires de nature à démontrer le bien-fondé de ce choix méthodologique.
-   
-### Pour aller plus loin
    
 * [Recueil d'articles sur les sondages préelectoraux par la société française de statistique](http://publications-sfds.fr/index.php/stat_soc/issue/view/24/showToc)
 * [Un cours de maths appliquées aux sondages donné au CNAM.](http://maths.cnam.fr/spip.php?article54)
@@ -64,6 +47,24 @@ Cependant, il faut comprendre que la "marge d'erreur" n'indique absolument pas q
 ## Opacité des coefficients de redressement.
 
 Puisque les résultats communiqués par les sondeurs ne sont pas les résultats bruts obtenus à l'issue de l'enquête, mais sont modifiés selon des méthodes mises au point par les instituts, une interprétation rigoureuse des résultats nécessiterait de connaître la méthodologie précise. En effet, ces méthodes sont complètement arbitraires. Pour cette raison, L'[article 3 de la loi de 1977 sur les sondages](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000522846) oblige les sondeurs à publier leurs méthodes de redressement si cela leur est demandé. Or, ceux-ci ne respectent pas la loi : ils ne publient pas ces données, et ne consentent pas à les communiquer lorsqu'on leur demande. C'est le cas par exemple de l'Ifop qui a refusé de nous transmettre ces informations.
+
+::: spoiler
+   ### La commission des sondages
+   
+   Créée suite à une [loi de 1977 modifiée en 2016](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000522846) régissant le contenu et la publication des sondages d'opinion, elle a un rôle actif depuis 2012 et surtout 2016. Désormais elle demande à chaque sondeur et publie sur <a href="www.commission-des-sondages.fr/notices/">son site</a> des notices permettant de connaître sinon la méthodoloie exacte, au moins : la taille du panel, les marges d'erreurs, si la méthode des quotas et un redressement ont été utilisés, avec quelle élection de référence. Lorsque des irrégularités sont constatées, la commission communique directement avec le sondeur et lui fait des recommandations. Malheureusement, ce processus est très peu transparent et les sondeurs récalcitrants ne sont pas mentionnés nommément et de simple rappels à la loi leur sont adressés. <br/><br/>
+   Néanmoins, certains passages de ses [rapports](http://www.commission-des-sondages.fr/hist/pdf/rapport-2015-2016.pdf) sont intéressants et permettent de se faire une meilleure idée de la méthodologie des instituts de sondage :<br/><br/>
+   
+   > Les deux autres mises au point, ordonnées dans le cadre du pouvoir d’autosaisine de la
+commission, ont relevé l’existence d’un défaut de méthode qui a affecté la qualité des résultats
+publiés. Etait en cause le choix des redressements, ceux retenus pour établir les résultats du sondage
+relatif au second tour de scrutin différant de ceux utilisés pour établir les résultats relatifs au
+premier. En outre, dans certains cas, il est apparu que l’institut avait procédé, s’agissant de certains
+candidats seulement, à une correction des résultats obtenus au vu des redressements qu’il avait
+décidé de retenir en se fondant sur d’autres éléments sans justifier de la cohérence globale de sa
+méthode. [...]
+> La commission rappelle qu’en principe, les sondages doivent, d’une vague à l’autre, être établis à partir d’une même méthode de redressement des résultats bruts, cette continuité méthodologique étant une condition nécessaire à leur comparabilité. Mais la commission n’exclut pas la possibilité, pour un institut, de changer de méthode au sein d’une succession de vagues. Cette modification peut aussi bien concerner le choix des sous-populations concernées que celui des élections de référence. Ce choix, qui relève de la responsabilité des instituts, doit être justifié par un élément intrinsèque ou extrinsèque à l’enquête qui conduit à considérer que la comparabilité des résultats par rapport à ceux de la précédente vague suppose un tel changement de méthode. En pareil cas, il appartient à l’institut de fournir à la commission toutes les explications nécessaires de nature à démontrer le bien-fondé de ce choix méthodologique.
+:::
+### Pour aller plus loin
 
 ## Biais de confirmation.
 
