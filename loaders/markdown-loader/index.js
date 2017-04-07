@@ -6,7 +6,16 @@ var md = markdownIt({
   html: true,
   typographer: true,
 })
-  .use(require('markdown-it-attrs'));
+  .use(require('markdown-it-attrs'))
+  .use(require('markdown-it-table-of-contents'), {
+    listType: 'ol',
+  })
+  .use(require('markdown-it-anchor'))
+  .use(require('markdown-it-container'), 'spoiler')
+  .use(require('markdown-it-container'), 'toggler', {
+    marker: '+',
+  })
+  .use(require('markdown-it-container'), 'toggable');
 
 module.exports = function (content) {
   this.cacheable();

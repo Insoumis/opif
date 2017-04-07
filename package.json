@@ -23,7 +23,10 @@
     "eslint": "^3.18.0",
     "eslint-plugin-react": "^6.10.3",
     "gatsby": "^0.12.39",
-    "markdown-it-attrs": "^0.8.0"
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-attrs": "^0.8.0",
+    "markdown-it-table-of-contents": "^0.3.2",
+    "markdown-it-container": "^2.0.0"
   },
   "eslintConfig": {
     "parser": "babel-eslint",

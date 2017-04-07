@@ -15,6 +15,13 @@ class Article extends Component {
     if (typeof twttr != 'undefined') {
       twttr.widgets.load();
     }
+
+    document.querySelector('.toggler').addEventListener('mouseup', (e) => {
+      let el = e.target;
+      while ((el = el.parentElement) && !el.classList.contains('toggler'));
+      while ((el = el.nextElementSibling) && !el.classList.contains('toggable'));
+      el.classList.toggle('visible');
+    });
   }
 
   render() {
@@ -29,7 +36,7 @@ class Article extends Component {
             <meta name="description" content={article.data.description || config.siteDescription} />
             <meta property="og:title" content={article.data.title + ' | ' + config.siteTitle} />
             <meta property="og:description" content={article.data.description || config.siteDescription} />
-            <meta property="og:image" content={`http://opif.info${article.path}thumbnail.png`} />
+            <meta property="og:image" content={`http://opif.info${article.path}${article.data.thumbnail}`} />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
             <meta name="twitter:card" content="summary" />
