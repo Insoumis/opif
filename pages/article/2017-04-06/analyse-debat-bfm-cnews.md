@@ -13,7 +13,7 @@ Mardi, après plus d’une heure d’interventions de 45 secondes, les premiers 
 
 <iframe height="700" src="http://jmbernard.com/images/laec/rtl/" width="100%"></iframe>
 
-Simulation reconstituant le [sondage RTL](http://www.rtl.fr/actu/politique/le-grand-debat-quel-candidat-vous-convainc-le-plus-7787954093) du 4 avril 2017.{.legend}
+Simulation reconstituant le [sondage RTL](http://www.rtl.fr/actu/politique/le-grand-debat-quel-candidat-vous-convainc-le-plus-7787954093){target=_blank} du 4 avril 2017.{.legend}
 
 Jean Lassalle, le candidat du peuple de la montagne va se retrouver sur le plateau victime d’un dédain sans précédent de la part de Ruth Elkrief, BFM queen dite « la sans pitié ». Cet évènement d’une rare brutalité couplé aux mauvaises ondes provoquées par l’utilisation massive des robots en marche va déclencher un contrefeux inattendu en faveur du candidat des Pyrénées. Agacés par tant de mépris et de malhonnêteté, les ovins vont se résoudre à intervenir dans le débat.
 
@@ -21,7 +21,7 @@ Alors que les équipes du candidat Hamon (dit le Copy Ninja) venaient tout juste
 
 [![Les moutons des montagnes à la conquête des sondages pour Jean Lasalle](analyse-debat-bfm-cnews.png)](analyse-debat-bfm-cnews.png)
 
-Imperturbable, le [directeur de l’institut](http://opif.info/article/2017-03-29/annonce-sondagegate/) Opif décrypte pour nous ce processus mystérieux :
+Imperturbable, le [directeur de l’institut](http://opif.info/article/2017-03-29/annonce-sondagegate/){target=_blank} Opif décrypte pour nous ce processus mystérieux :
 « C’est un phénomène particulièrement exceptionnel. En effet, lorsqu’ils repèrent une trop grande présence d’Astroturf (ndlr : L’Astroturfing est la création d’opinion factice via l’utilisation des bots, en opposition à l’option dite Grass-Root : enracinée, organique, réelle) les moutons se connectent massivement au réseau et se mobilisent pour porter secours à Jean Lassalle, leur candidat naturel, le plaçant sans difficulté en tête de n’importe quel sondage non sécurisé. »
 
 Corroborant cette analyse, notre envoyé spécial en direct de l’ambassade de l’Equateur à Londres nous confirme :
