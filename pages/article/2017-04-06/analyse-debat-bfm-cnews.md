@@ -25,6 +25,6 @@ Imperturbable, le [directeur de l’institut](http://opif.info/article/2017-03-2
 « C’est un phénomène particulièrement exceptionnel. En effet, lorsqu’ils repèrent une trop grande présence d’Astroturf (ndlr : L’Astroturfing est la création d’opinion factice via l’utilisation des bots, en opposition à l’option dite Grass-Root : enracinée, organique, réelle) les moutons se connectent massivement au réseau et se mobilisent pour porter secours à Jean Lassalle, leur candidat naturel, le plaçant sans difficulté en tête de n’importe quel sondage non sécurisé. »
 
 Corroborant cette analyse, notre envoyé spécial en direct de l’ambassade de l’Equateur à Londres nous confirme :
-« Mountain sheep have the ability to browse every opinion that is not grassrooted. They particulary love synthétic grass (i.e : Astroturf) and are very keen on helping people who are in desperate situation. This is what happened with Jean Lassalle. It’s one of the best case study we have ever seen in France. »
+« Mountain sheeps have the ability to browse every opinion other than grassroot ones. They particulary love synthetic grass (i.e : Astroturf) and are very keen on helping people who are in desperate situation. This is what happened with Jean Lassalle. It’s one of the best case study we have ever seen in France. »
 
 Il semble bien que les sondages en ligne pour cette élection présidentielle n’aient pas fini de nous surprendre. La rédaction d’Opif reste sur le qui vive pour apporter un décryptage de « qualité top+ » à ses abonnés.
