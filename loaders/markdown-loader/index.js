@@ -15,7 +15,8 @@ var md = markdownIt({
   .use(require('markdown-it-container'), 'toggler', {
     marker: '+',
   })
-  .use(require('markdown-it-container'), 'toggable');
+  .use(require('markdown-it-container'), 'toggable')
+  .use(require('markdown-it-footnote'));
 
 module.exports = function (content) {
   this.cacheable();

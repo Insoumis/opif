@@ -230,6 +230,14 @@
     }
   }
 
+  .footnotes-sep {display: none;}
+
+  .footnotes {
+    border-top: 1px solid $red;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
   footer {
     border-top: 2px solid $red;
     margin-top: 60px;
