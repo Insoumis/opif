@@ -135,7 +135,11 @@ class Analysis extends Component {
   }
 
   render() {
-    return this.getText();
+    return (
+      <div className="Analysis">
+        Le score de <strong className="melenchon">Jean-Luc Mélenchon</strong> est-il sous-évalué dans les sondages ?
+      </div>
+    );
   }
 }
 

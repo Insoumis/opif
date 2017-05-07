@@ -33,19 +33,22 @@ class Widget extends Component {
   constructor(props) {
     super(props);
 
-    const progression = candidats.map(() => 'pause');
+    // const progression = candidats.map(() => 'pause');
+    const progression = ['plus', 'pause', 'minus', 'minus', 'minus'];
+    const series = [82, 4.93, 3, -4, -5];
 
     this.state = {
-      counter: 15,
-      isLoading: true,
-      series: this.getSeries(),
+    //   counter: 15,
+    //   isLoading: true,
+    //   series: this.getSeries(),
+      series,
       progression,
     };
   }
 
   componentDidMount() {
-    this.loop();
-    setInterval(this.loop.bind(this), 15000);
+    // this.loop();
+    // setInterval(this.loop.bind(this), 15000);
   }
 
   loop() {
@@ -103,12 +106,12 @@ class Widget extends Component {
           <div className="cocarde" />
           Suivez la Loterie Présidentielle<br /><strong>EN TEMPS RÉEL</strong>
         </h2>
-        <div className={`counter${(this.state.counter < 13 ) ? ' visible' : ''}`}>
-          <strong>{(this.state.counter < 13) ? this.state.counter : 0}s</strong> avant la prochaine mise à jour !
+        <div className="counter visible">
+          Plus de nouveaux sondages avant les élections !
         </div>
         <CandidatList
           candidats={candidats.map((candidat) => candidat.alias)}
-          isLoading={this.state.isLoading}
+          isLoading={false}
           progression={this.state.progression}
         />
         <Graph data={{

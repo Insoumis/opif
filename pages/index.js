@@ -29,9 +29,9 @@ const Index = ({ route }) => {
           <meta property="og:image:height" content="778" />
           <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <Row>
+      {/*<Row>
         <Widget />
-      </Row>
+      </Row>*/}
       <Row>
         <Col md={12} lg={9}>
           <ArticleList articles={articles} />
