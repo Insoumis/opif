@@ -3,7 +3,7 @@ title: Des critiques qui se multiplient selon Le Monde, vraiment ?
 date: 14 mai 2017
 type: analyse
 thumbnail: thumbnail.png
-description: Suite à la vague de critiques citées par Le Monde, nous nous permettons d'apporter notre pierre à l'édifice : les critiques se multiplient-elles réellement à l'endroit de Jean-Luc Mélenchon ? Le résultat va vous étonner ...
+description: Les critiques se multiplient-elles réellement à l'endroit de Jean-Luc Mélenchon ? Le résultat va vous étonner ...
 ---
 
 Suite à la vague de critiques citées par Le Monde, nous nous permettons d'apporter notre pierre à l'édifice : les critiques se multiplient-elles réellement à l'endroit de Jean-Luc Mélenchon ?

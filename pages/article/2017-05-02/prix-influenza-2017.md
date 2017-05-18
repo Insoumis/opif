@@ -3,10 +3,10 @@ title: Le prix Influenza 2017 décerné au directeur de L'Institut Opif
 date: 2 mai 2017
 type: annonce
 thumbnail: thumbnail.png
-description: Le prix Influenza 2017 a été décerné au président de l’Institut Opif, Théodore Debout, a annoncé la Mind Control Organization lors d’une conférence de presse organisée ce vendredi 7 octobre dans la ville de Luxembourg .
+description: Le prix Influenza 2017 a été décerné au président de l’Institut Opif, Théodore Debout, a annoncé la Mind Control Organization lors d’une conférence de presse.
 ---
 
-Le prix Influenza 2017 a été décerné au président de l’Institut Opif, Théodore Debout, a annoncé la Mind Control Organization lors d’une conférence de presse organisée ce vendredi 7 octobre dans la ville de Luxembourg .
+Le prix Influenza 2017 a été décerné au président de l’Institut Opif, Théodore Debout, a annoncé la Mind Control Organization lors d’une conférence de presse organisée ce mardi 2 mai dans la ville de Luxembourg .
 
 **Un "grand encouragement" pour la recherche**
 
