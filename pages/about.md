@@ -2,7 +2,7 @@
 title: À propos de l'OPIF
 ---
 
-Si les sondages participent à façonner les opinions des individus tout au long de l’année, la période de l’élection présidentielle apparaît comme un point d’orgue pour cette pratique douteuse. A cette occasion, le [Discord Insoumis](http://discord.insoumis.online/){target=_blank} a donc mis à l’agenda de ses projets la création d’un institut de sondage parodique pour attirer l’attention sur ce phénomène encore trop timidement déconstruit.
+Si les sondages participent à façonner les opinions des individus tout au long de l’année, la période de l’élection présidentielle apparaît comme un point d’orgue pour cette pratique douteuse. A cette occasion, le [Discord Insoumis](http://discord-insoumis.fr/){target=_blank} a donc mis à l’agenda de ses projets la création d’un institut de sondage parodique pour attirer l’attention sur ce phénomène encore trop timidement déconstruit.
 
 Le Discord Insoumis a ainsi imaginé une plateforme qui emprunte son design au sondage Rolling et son nom à celui du fameux institut de sondage : opif.info.
 Le site s’accompagne d’un compte twitter qui intervient 1 fois par jour pour souligner le caractère astrologique de cette pratique dont le big data a déjà sonné le glas.
