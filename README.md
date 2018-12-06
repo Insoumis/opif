@@ -1,4 +1,7 @@
 ## Installation et premier lancement
+
+pré-requis : nodejs v8 (non compatible node v10+)
+
 ```
 git clone https://github.com/Insoumis/opif.git
 npm install
